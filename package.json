@@ -1,6 +1,6 @@
 {
   "name": "react-native-navigation-drawer-layout",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Native library to generate navigation drawer layout.",
   "repository": {
     "type": "git",
@@ -13,6 +13,10 @@
   "main": "NavigationDrawerLayout.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react-native-animatable": "^1.3.0",
+    "react-native-vector-icons": "^5.0.0"
   },
   "keywords": [
     "react-native",

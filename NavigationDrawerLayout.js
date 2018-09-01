@@ -18,8 +18,8 @@ import * as Animatable from 'react-native-animatable';
 const AnimatedIcon = Animatable.createAnimatableComponent(Icon2);
 
 //var { width } = Dimensions.get('window');
-import AvatarSocial from './PhotoStatus';
-import Collapsing from './BarCollapsible';
+import AvatarSocial from 'react-native-avatar-social';
+import Collapsing from 'react-native-collapsing';
 
 const RippleColor = (...args) =>
   Platform.Version >= 21 ? TouchableNativeFeedback.Ripple(...args) : null;
