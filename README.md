@@ -31,7 +31,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <DrawerLayout
+      <NavigationDrawerLayout
         percent={75}
         //statusBar="#008cff"
         //statusBarTransparency={0.3}
@@ -297,7 +297,7 @@ export default class App extends React.Component {
             {this.state.menu}!
           </Text>
         </View>
-      </DrawerLayout>
+      </NavigationDrawerLayout>
     );
   }
 }
