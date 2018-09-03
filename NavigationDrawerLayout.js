@@ -189,12 +189,12 @@ export default class NavigationDrawerLayout extends React.Component {
             return (
               <View
                 key={i}
-                style={{
-                  borderBottomColor: '#ccc',
-                  borderBottomWidth: 1,
+                style={[{
+                  borderBottomColor: e.color || '#cccccc',
+                  borderBottomWidth: e.width || 1,
                   marginTop: 8,
                   marginBottom: 8,
-                }}
+                },{e.style}]}
               />
             );
           else if (e.type == 'title')
