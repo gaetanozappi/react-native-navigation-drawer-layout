@@ -1,8 +1,14 @@
 # React Native: react-native-navigation-drawer-layout
 
 [![github home](http://img.shields.io/npm/v/react-native-navigation-drawer-layout.svg?style=flat)](https://www.npmjs.com/package/react-native-navigation-drawer-layout)
+![platforms](https://img.shields.io/badge/platforms-Android-brightgreen.svg?style=flat&colorB=191A17)
 [![github home](https://img.shields.io/badge/gaetanozappi-react--native--navigation--drawer--layout-blue.svg?style=flat)](https://github.com/gaetanozappi/react-native-navigation-drawer-layout)
+[![npm](https://img.shields.io/npm/dm/react-native-navigation-drawer-layout.svg?style=flat&colorB=007ec6)](https://www.npmjs.com/package/react-native-navigation-drawer-layout)
+
 [![github issues](https://img.shields.io/github/issues/gaetanozappi/react-native-navigation-drawer-layout.svg?style=flat)](https://github.com/gaetanozappi/react-native-navigation-drawer-layout/issues)
+[![github closed issues](https://img.shields.io/github/issues-closed/gaetanozappi/react-native-navigation-drawer-layout.svg?style=flat&colorB=44cc11)](https://github.com/gaetanozappi/react-native-navigation-drawer-layout/issues?q=is%3Aissue+is%3Aclosed)
+[![Issue Stats](https://img.shields.io/issuestats/i/github/gaetanozappi/react-native-navigation-drawer-layout.svg?style=flat&colorB=44cc11)](http://github.com/gaetanozappi/react-native-navigation-drawer-layout/issues)
+[![github license](https://img.shields.io/github/license/gaetanozappi/react-native-navigation-drawer-layout.svg)]()
 
 ![PNG](screenshot/react-native-navigation-drawer-layout.png)
 
