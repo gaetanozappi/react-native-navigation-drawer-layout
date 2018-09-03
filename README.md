@@ -318,7 +318,7 @@ const styles = StyleSheet.create({});
 |`percent`| `number`|| Length in percentage of the drawer.
 |`statusBar`| `string`|| Color statusbar.
 |`statusBarTransparency`| `number`|| Transparency statusbar.
-|`type`| `string`|| 
+|`type`| `string`|| `simple`
 |`drawerPosition`| `string`|`left`| Position drawer.
 |`selected`| `string`|| 
 |`window`| `string`|| It is used to define what to display in the drawer, types: `menu` or `account`
@@ -329,9 +329,9 @@ const styles = StyleSheet.create({});
 |`second`| `string`|| It is used to define what to set as the second field.
 |`account`| `array`|| It is used to define account.
 |`menu`| `array`|| It is used to define the menu.
-|`badgeFunction`| `function`|| Use in case you want to define a function, for the badgeText attribute.
+|`badgeFunction`| `function: optional`|| Use in case you want to define a function, for the badgeText attribute.
 
-Account
+- **Account**
 
 |Prop|Type|Default|Note|
 | - | - | - | - |
@@ -344,13 +344,16 @@ Account
 
 You can add any attribute, then using the `first` and` second` attributes you can use to show them in the drawer.
 
-Menu type `divider`
+- **Menu type `divider`**
 
 |Prop|Type|Default|Note|
 | - | - | - | - |
-|`type`|`string`|| `divider`
+|`type`|`string`|| Use `divider`.
+|`color`|`string`|`#cccccc`| Color divider.
+|`width`|`number`|`1`| Width divider.
+|`style`|`style: optional`|| Style divider.
 
-Menu type `menu`
+- **Menu type `menu`**
 
 |Prop|Type|Default|Note|
 | - | - | - | - |
@@ -368,7 +371,7 @@ Menu type `menu`
 |`badgeColor`|`string`|| 
 |`badgeBackground`|`string`|| 
 
-Menu type `collapse`
+- **Menu type `collapse`**
 
 |Prop|Type|Default|Note|
 | - | - | - | - |
@@ -399,8 +402,6 @@ Menu type `collapse`
 |`badgeRadius`|`number`|| 
 |`badgeStyle`|`string`|| 
 |`menu`|`array`|| 
-
-
 
 ## License
 This library is provided under the Apache License.
