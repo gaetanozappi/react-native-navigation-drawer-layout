@@ -313,8 +313,92 @@ const styles = StyleSheet.create({});
 
 ## 💡 Props
 
-| Prop              | Type       | Default | Note                                                                                                       |
-| ----------------- | ---------- | ------- | ---------------------------------------------------------------------------------------------------------- |
+|Prop|Type|Default|Note|
+| - | - | - | - |
+|`percent`| `number`|| Length in percentage of the drawer.
+|`statusBar`| `string`|| Color statusbar.
+|`statusBarTransparency`| `number`|| Transparency statusbar.
+|`type`| `string`|| 
+|`drawerPosition`| `string`|`left`| Position drawer.
+|`selected`| `string`|| 
+|`window`| `string`|| It is used to define what to display in the drawer, types: `menu` or `account`
+|`color`| `string`|| 
+|`backgroundColor`| `string`|| Background drawer.
+|`imageBackground`| `string`|| Image drawer.
+|`first`| `string`|| It is used to define what to set as the first field.
+|`second`| `string`|| It is used to define what to set as the second field.
+|`account`| `array`|| It is used to define account.
+|`menu`| `array`|| It is used to define the menu.
+|`badgeFunction`| `function`|| Use in case you want to define a function, for the badgeText attribute.
+
+Account
+
+|Prop|Type|Default|Note|
+| - | - | - | - |
+|`name`|`string`|| 
+|`email`|`string`|| 
+|`image`|`string`|| 
+|`badgeText`|`string`|| 
+|`badgeColor`|`string`|| 
+|`badgeBackground`|`string`|| 
+
+You can add any attribute, then using the `first` and` second` attributes you can use to show them in the drawer.
+
+Menu type `divider`
+
+|Prop|Type|Default|Note|
+| - | - | - | - |
+|`type`|`string`|| `divider`
+
+Menu type `menu`
+
+|Prop|Type|Default|Note|
+| - | - | - | - |
+|`type`|`string`|| `menu`
+|`name`|`string`|| 
+|`title`|`string`|| 
+|`icon`|`string`|| 
+|`colorText`|`string`|| 
+|`colorTextFocus`|`string`|| 
+|`colorIcon`|`string`|| 
+|`colorIconFocus`|`string`|| 
+|`background`|`string`|| 
+|`backgroundFocus`|`string`|| 
+|`badgeText`|`string`|| 
+|`badgeColor`|`string`|| 
+|`badgeBackground`|`string`|| 
+
+Menu type `collapse`
+
+|Prop|Type|Default|Note|
+| - | - | - | - |
+|`type`|`string`|| `collapse`
+|`name`|`string`|| 
+|`title`|`string`|| 
+|`showOnStart`|`bool`|| 
+|`rippleColor`|`string`|| 
+|`backgroundBarNormal`|`string`|| 
+|`backgroundBarFocus`|`string`|| 
+|`iconBarNameNormal`|`string`|| 
+|`iconBarNameFocus`|`string`|| 
+|`iconBarColorNormal`|`string`|| 
+|`iconBarColorFocus`|`string`|| 
+|`textBarColorNormal`|`string`|| 
+|`textBarColorFocus`|`string`|| 
+|`animateIconColorNormal`|`string`|| 
+|`animateIconColorFocus`|`string`|| 
+|`iconColor`|`string`|| 
+|`colorText`|`string`|| 
+|`colorTextFocus`|`string`|| 
+|`colorIcon`|`string`|| 
+|`colorIconFocus`|`string`|| 
+|`background`|`string`|| 
+|`badgeText`|`string`|| 
+|`badgeColor`|`string`|| 
+|`badgeBackground`|`string`|| 
+|`badgeRadius`|`number`|| 
+|`badgeStyle`|`string`|| 
+|`menu`|`array`|| 
 
 
 
