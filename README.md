@@ -12,14 +12,14 @@
 
 ![PNG](screenshot/react-native-navigation-drawer-layout.png)
 
--   [Usage](#usage)
--   [License](#license)
+-   [Usage](#-usage)
+-   [License](#-license)
 
 ## 📖 Getting started
 
 `$ npm install react-native-navigation-drawer-layout --save`
 
-## Usage
+## 💻 Usage
 
 ```javascript
 import * as React from 'react';
@@ -403,5 +403,5 @@ You can add any attribute, then using the `first` and` second` attributes you ca
 |`badgeStyle`|`string`|| 
 |`menu`|`array`|| 
 
-## License
+## 📜 License
 This library is provided under the Apache License.
