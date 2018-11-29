@@ -225,6 +225,7 @@ export default class App extends React.Component {
                 badgeColor: '#fff',
                 badgeBackground: '#1194ff',
                 badgeRadius: 4,
+                close: true
               },
             ],
           },
@@ -306,8 +307,8 @@ export default class App extends React.Component {
         onPress={e => {
           this.setState({ menu: e.title });
           var type = e.name == 'opt2' ? 'simple' : '';
-           this.setState({ type });
-           alert(e.name)
+          this.setState({ type });
+          alert(e.name)
           console.log('Menu:', e);
         }}>
         <View
