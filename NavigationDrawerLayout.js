@@ -67,6 +67,10 @@ export default class NavigationDrawerLayout extends React.Component {
     this.drawer.openDrawer();
   }
 
+  closeDrawer() {
+    this.drawer.closeDrawer();
+  }
+
   componentWillMount() {
     var account = this.state.account;
     var firstAccount = Object.assign({}, account[0]);
@@ -84,8 +88,11 @@ export default class NavigationDrawerLayout extends React.Component {
   componentDidMount() {
     this.openDrawer();
     const { window } = this.state;
-    if (window == 'menu') this.animatable.rotateTop(0);
-    else this.animatable.rotateBottom(0);
+    const { type } = this.props;
+    if(type != 'simple'){
+      if (window == 'account') this.animatable.rotateBottom(0);
+      else this.animatable.rotateTop(0);
+    }
   }
 
   viewBackground(el) {
@@ -104,12 +111,13 @@ export default class NavigationDrawerLayout extends React.Component {
   _selected = e => {
     this.setState({ selected: e.name });
     this.props.onPress(e);
+    if(e.close == true) this.closeDrawer();
   };
 
   _change = () => {
-    var window = this.state.window == 'menu' ? 'account' : 'menu';
-    if (this.state.window == 'menu') this.animatable.rotateBottom(0);
-    else this.animatable.rotateTop(0);
+    var window = this.state.window == 'account' ? 'menu' : 'account';
+    if (this.state.window == 'account') this.animatable.rotateTop(0);
+    else this.animatable.rotateBottom(0);
     this.setState({ window });
   };
 
@@ -261,7 +269,7 @@ export default class NavigationDrawerLayout extends React.Component {
             return (
               <TouchableNativeFeedback
                 key={i}
-                onPress={this._selected.bind(this, e)}
+                onPress={() => this._selected(e)}
                 delayPressIn={0}
                 delayPressOut={0}
                 useForeground={true}
@@ -403,7 +411,7 @@ export default class NavigationDrawerLayout extends React.Component {
       </View>
     );
 
-    var iconCollapsed = this.state.window == 'menu' ? 'caret-up' : 'caret-down';
+    var iconCollapsed = this.state.window == 'account' ? 'caret-down' : 'caret-up';
 
     var navigationView = (
       <ScrollView style={{ flex: 1, backgroundColor: backgroundColor }}>
@@ -532,7 +540,7 @@ export default class NavigationDrawerLayout extends React.Component {
             </TouchableNativeFeedback>
           </ImageBackground>
         )}
-        {this.state.window == 'menu' ? list : accountList}
+        {this.state.window == 'account' ? accountList : list}
       </ScrollView>
     );
     return (
