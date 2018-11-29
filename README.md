@@ -19,6 +19,10 @@
 
 `$ npm install react-native-navigation-drawer-layout --save`
 
+`$ react-native link react-native-material-letter-icon`
+
+`$ react-native link react-native-vector-icons`
+
 ## 💻 Usage
 
 ```javascript
