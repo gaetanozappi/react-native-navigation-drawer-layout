@@ -289,6 +289,19 @@ export default class App extends React.Component {
             background: 'transparent',
             backgroundFocus: '#e8e8e8',
           },
+          {
+            type: 'menu',
+            name: 'opt14',
+            title: 'Close Drawer',
+            icon: 'exit-to-app',
+            colorText: '#000',
+            colorTextFocus: '#607D8B',
+            colorIcon: '#c1c1c1',
+            colorIconFocus: '#607D8B',
+            background: 'transparent',
+            backgroundFocus: '#e8e8e8',
+            close: true
+          },
         ]}
         onPress={e => {
           this.setState({ menu: e.title });
@@ -325,7 +338,7 @@ const styles = StyleSheet.create({});
 |`type`| `string`|| `simple`
 |`drawerPosition`| `string`|`left`| Position drawer.
 |`selected`| `string`|| 
-|`window`| `string`|| It is used to define what to display in the drawer, types: `menu` or `account`
+|`window`| `string`|`menu`| It is used to define what to display in the drawer, types: `menu` or `account`
 |`color`| `string`|| 
 |`backgroundColor`| `string`|| Background drawer.
 |`imageBackground`| `string`|| Image drawer.
@@ -373,7 +386,8 @@ You can add any attribute, then using the `first` and` second` attributes you ca
 |`backgroundFocus`|`string`|| 
 |`badgeText`|`string`|| 
 |`badgeColor`|`string`|| 
-|`badgeBackground`|`string`|| 
+|`badgeBackground`|`string`||
+|`close`|`boolean`|`false`| When it is set to `true`, if the item is clicked the drawer menu will close.
 
 - **Menu type `collapse`**
 
