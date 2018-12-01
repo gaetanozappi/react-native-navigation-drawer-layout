@@ -11,7 +11,7 @@
 [![Issue Stats](https://img.shields.io/issuestats/i/github/gaetanozappi/react-native-navigation-drawer-layout.svg?style=flat&colorB=44cc11)](http://github.com/gaetanozappi/react-native-navigation-drawer-layout/issues)
 [![github license](https://img.shields.io/github/license/gaetanozappi/react-native-navigation-drawer-layout.svg)]()
 
-![PNG](screenshot/react-native-navigation-drawer-layout.png)
+<img src="https://github.com/gaetanozappi/react-native-navigation-drawer-layout/raw/master/screenshot/react-native-navigation-drawer-layout.png" />       
 
 -   [Usage](#-usage)
 -   [License](#-license)
@@ -309,7 +309,7 @@ export default class App extends React.Component {
           this.setState({ menu: e.title });
           var type = e.name == 'opt2' ? 'simple' : '';
           this.setState({ type });
-          alert(e.name)
+          alert("Title:"+e.title+" - "+"Name:"+e.name);
           console.log('Menu:', e);
         }}>
         <View
