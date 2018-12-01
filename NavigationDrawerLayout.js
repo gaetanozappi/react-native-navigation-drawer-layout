@@ -89,7 +89,7 @@ export default class NavigationDrawerLayout extends React.Component {
     this.openDrawer();
     const { window } = this.state;
     const { type } = this.props;
-    if(type != 'simple'){
+    if (type != 'simple') {
       if (window == 'account') this.animatable.rotateBottom(0);
       else this.animatable.rotateTop(0);
     }
@@ -111,7 +111,7 @@ export default class NavigationDrawerLayout extends React.Component {
   _selected = e => {
     this.setState({ selected: e.name });
     this.props.onPress(e);
-    if(e.close == true) this.closeDrawer();
+    if (e.close == true) this.closeDrawer();
   };
 
   _change = () => {
@@ -197,12 +197,15 @@ export default class NavigationDrawerLayout extends React.Component {
             return (
               <View
                 key={i}
-                style={[{
-                  borderBottomColor: e.color || '#cccccc',
-                  borderBottomWidth: e.width || 1,
-                  marginTop: 8,
-                  marginBottom: 8,
-                },{e.style}]}
+                style={[
+                  {
+                    borderBottomColor: e.color || '#cccccc',
+                    borderBottomWidth: e.width || 1,
+                    marginTop: 8,
+                    marginBottom: 8,
+                  },
+                  e.style
+                ]}
               />
             );
           else if (e.type == 'title')
