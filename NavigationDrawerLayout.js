@@ -135,7 +135,7 @@ export default class NavigationDrawerLayout extends React.Component {
       el => el.email !== firstAccount.email
     );
     this.setState({ secondAccount });
-    console.log(secondAccount);
+    this.props.changeAccount(firstAccount);
   };
 
   first = e => {
