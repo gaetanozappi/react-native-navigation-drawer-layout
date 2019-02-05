@@ -305,6 +305,9 @@ export default class App extends React.Component {
             close: true
           },
         ]}
+        changeAccount={e => {
+          console.log('Account:', e);
+        }}
         onPress={e => {
           this.setState({ menu: e.title });
           var type = e.name == 'opt2' ? 'simple' : '';
@@ -349,6 +352,7 @@ const styles = StyleSheet.create({});
 |`account`| `array`|| It is used to define account.
 |`menu`| `array`|| It is used to define the menu.
 |`badgeFunction`| `function: optional`|| Use in case you want to define a function, for the badgeText attribute.
+|`changeAccount`| `function: optional`|| When you change the primary user of this function returns the its information.
 
 - **Account**
 
