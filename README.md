@@ -52,7 +52,7 @@ export default class App extends React.Component {
         window="menu"
         color="#fff"
         backgroundColor="#fff" //303030
-        imageBackground="https://c.wallhere.com/photos/aa/44/glare_colorful_bright_circles-679384.jpg!d"
+        imageBackground={{ uri: "https://c.wallhere.com/photos/aa/44/glare_colorful_bright_circles-679384.jpg!d" }}
         first={'username'}
         second={'joined'}
         account={[
@@ -346,7 +346,7 @@ const styles = StyleSheet.create({});
 |`window`| `string`|`menu`| It is used to define what to display in the drawer, types: `menu` or `account`
 |`color`| `string`|| 
 |`backgroundColor`| `string`|| Background drawer.
-|`imageBackground`| `string`|| Image drawer.
+|`imageBackground`| `obj`|| Image drawer.
 |`first`| `string`|| It is used to define what to set as the first field.
 |`second`| `string`|| It is used to define what to set as the second field.
 |`account`| `array`|| It is used to define account.
