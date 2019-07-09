@@ -420,9 +420,7 @@ export default class NavigationDrawerLayout extends React.Component {
       <ScrollView style={{ flex: 1, backgroundColor: backgroundColor }}>
         {type != 'simple' && (
           <ImageBackground
-            source={{
-              uri: imageBackground,
-            }}
+            source={imageBackground}
             style={{
               width: null,
               height: null,
