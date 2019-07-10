@@ -360,7 +360,7 @@ const styles = StyleSheet.create({});
 | - | - | - | - |
 |`name`|`string`|| 
 |`email`|`string`|| 
-|`image`|`string`|| 
+|`image`|`obj`|| `We need to pass an url image, as in the example, or a required local image.`
 |`badgeText`|`string`|| 
 |`badgeColor`|`string`|| 
 |`badgeBackground`|`string`|| 
