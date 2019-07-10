@@ -61,7 +61,7 @@ export default class App extends React.Component {
             name: 'James Bond',
             email: 'james.bond.xx@xxx.xxx',
             image:
-              'https://cdn1.iconfinder.com/data/icons/avatar-2-2/512/Casual_Man_2-512.png',
+              {{ uri: 'https://cdn1.iconfinder.com/data/icons/avatar-2-2/512/Casual_Man_2-512.png' }},
             joined: 'Joined at Jun 21, 2021',
             badgeText: '100',
             badgeColor: '#fff',
@@ -81,7 +81,7 @@ export default class App extends React.Component {
             name: 'Shinichi Kudo',
             email: 'shinichi.kudo.xx@xxx.xxx',
             image:
-              'https://cdn1.iconfinder.com/data/icons/avatar-2-2/512/Casual_Man_3-512.png',
+              {{ uri: 'https://cdn1.iconfinder.com/data/icons/avatar-2-2/512/Casual_Man_3-512.png' }},
             badgeText: '21',
             badgeColor: '#fff',
             badgeBackground: '#25dbd2',
@@ -92,7 +92,7 @@ export default class App extends React.Component {
             name: 'Arthur Conan Doyle',
             email: 'arthur.conan.doyle.xx@xxx.xxx',
             image:
-              'https://cdn0.iconfinder.com/data/icons/user-interface-vol-3-12/66/68-512.png',
+              {{ uri: 'https://cdn0.iconfinder.com/data/icons/user-interface-vol-3-12/66/68-512.png' }},
             circle: ['transparent', 'transparent'],
           },
         ]}
